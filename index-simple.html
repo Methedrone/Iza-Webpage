@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iza's Website</title>
+    <link rel="icon" href="public/images/favicon.ico" />
+    <meta name="description" content="Strona portfolio Izy" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <nav id="navigation"></nav>
+
+    <main id="content">
+      <!-- Zawartość strony będzie wstawiana dynamicznie przez JavaScript -->
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { initApp } from './src/main.js';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        initApp();
+        console.log('Aplikacja została załadowana!');
+      });
+    </script>
+  </body>
+</html>
