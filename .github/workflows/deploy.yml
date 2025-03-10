@@ -57,12 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-```
-
-Aby to działało, upewnij się, że w pliku `package.json` masz skonfigurowane skrypty:
-
-```json
-"scripts": {
-  "build": "webpack --config webpack.config.js --mode production",
-  "dev": "webpack serve --config webpack.config.js --mode development"
-}
