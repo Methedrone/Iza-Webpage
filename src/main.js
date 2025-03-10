@@ -57,6 +57,7 @@ function navigateTo(page) {
       import('./pages/Home.js').then((module) => {
         module.renderHomePage();
       });
+      break;
   }
 }
 

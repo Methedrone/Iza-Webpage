@@ -33,7 +33,7 @@ Iza-Webpage to kompleksowe rozwiązanie dla firm oferujących usługi rezerwacyj
 ```
 ```bash
 # Klonowanie repozytorium
-git clone https://github.com/TWOJA-NAZWA-UZYTKOWNIKA/Iza-Webpage.git
+git clone https://github.com/Methedrone/Iza-Webpage.git
 cd Iza-Webpage
 
 # Instalacja zależności
