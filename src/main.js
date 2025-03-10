@@ -18,7 +18,7 @@ function initApp() {
 function setupRouting() {
   const links = document.querySelectorAll('nav a');
 
-  links.forEach(link => {
+  links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const page = e.target.getAttribute('data-page');
@@ -32,29 +32,29 @@ function navigateTo(page) {
   const contentContainer = document.getElementById('content');
   contentContainer.innerHTML = '';
 
-  switch(page) {
+  switch (page) {
     case 'home':
-      import('./pages/Home.js').then(module => {
+      import('./pages/Home.js').then((module) => {
         module.renderHomePage();
       });
       break;
     case 'about':
-      import('./pages/About.js').then(module => {
+      import('./pages/About.js').then((module) => {
         module.renderAboutPage();
       });
       break;
     case 'contact':
-      import('./pages/Contact.js').then(module => {
+      import('./pages/Contact.js').then((module) => {
         module.renderContactPage();
       });
       break;
     case 'booking':
-      import('./pages/Booking.js').then(module => {
+      import('./pages/Booking.js').then((module) => {
         module.renderBookingPage();
       });
       break;
     default:
-      import('./pages/Home.js').then(module => {
+      import('./pages/Home.js').then((module) => {
         module.renderHomePage();
       });
   }
