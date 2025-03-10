@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Projekt strony internetowej w JavaScript",
   "main": "./src/main.js",
+  "homepage": "https://username.github.io/repo-name",
   "scripts": {
-      "start": "webpack serve",
-      "build": "webpack",
-      "build:prod": "webpack --mode=production",
-      "test": "jest",
-      "lint": "eslint src/**/*.js"
-    },
+    "start": "webpack serve",
+    "build": "webpack",
+    "build:prod": "webpack --mode=production",
+    "test": "jest",
+    "lint": "eslint src/**/*.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "keywords": [
     "javascript",
     "website"

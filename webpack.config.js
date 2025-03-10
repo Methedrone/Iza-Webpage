@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // Folder wyjściowy
     filename: 'bundle.js', // Nazwa pliku wynikowego
     clean: true, // Czyści folder dist przed każdym nowym buildem
+    publicPath: './', // Dodaj nazwę repozytorium
   },
   module: {
     rules: [
@@ -45,6 +46,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html', // Wskazuje na bazowy plik HTML
       filename: 'index.html', // Nazwa wyjściowego pliku HTML
+      inject: 'body',
+      scriptLoading: 'blocking', // To zapewni, że skrypt będzie miał atrybut type="text/javascript"
     }),
     // Kopiuje statyczne pliki do folderu docelowego
     new CopyWebpackPlugin({
