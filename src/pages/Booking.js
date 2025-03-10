@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 // src/pages/Booking.js
 
-import { validateForm } from '../utils/helpers.js';
+import * as helpersJs from '../utils/helpers.js';
 
 /**
  * Renderuje stronę rezerwacji
@@ -378,6 +379,7 @@ function renderBookingPage() {
     };
 
     // Tutaj byłoby wysłanie danych do API i wyświetlenie wyników
+    // eslint-disable-next-line no-console
     console.log('Szukam dostępnych pokoi dla:', formData);
 
     // Symulacja wyświetlenia wyników

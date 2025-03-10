@@ -30,7 +30,7 @@ Iza-Webpage to kompleksowe rozwiązanie dla firm oferujących usługi rezerwacyj
 - ESLint i Prettier do formatowania kodu
 
 ## Instalacja i uruchomienie
-```
+
 ```bash
 # Klonowanie repozytorium
 git clone https://github.com/Methedrone/Iza-Webpage.git
@@ -78,3 +78,4 @@ Iza-Webpage/
 ## Licencja
 
 Ten projekt jest udostępniany na licencji MIT. Szczegóły znajdziesz w pliku [LICENSE](LICENSE).
+```

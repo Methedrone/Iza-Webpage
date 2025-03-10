@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 // Importy modułów i komponentów
 import { renderHeader } from './components/Header.js';
 import { renderFooter } from './components/Footer.js';

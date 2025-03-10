@@ -2,7 +2,7 @@
   "name": "projekt-strony",
   "version": "1.0.0",
   "description": "Projekt strony internetowej w JavaScript",
-  "main": "index.js",
+  "main": "./src/main.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
@@ -13,12 +13,13 @@
     "javascript",
     "website"
   ],
-  "author": "Twoje Imię",
+  "author": "Mahawir Iwanowski",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "babel-loader": "^8.4.1",
+    "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^6.11.0",
     "eslint": "^8.57.1",
     "html-webpack-plugin": "^5.6.3",
