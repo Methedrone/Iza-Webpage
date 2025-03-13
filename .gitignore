@@ -1,3 +1,33 @@
-
-/dist
+# Zależności
 /node_modules
+/.pnp
+.pnp.js
+
+# Testy
+/coverage
+
+# Produkcja
+/build
+/dist
+
+# Środowisko
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Edytory
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System
+.DS_Store
+Thumbs.db
