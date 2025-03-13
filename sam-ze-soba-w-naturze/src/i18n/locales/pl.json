@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Sam Ze Sobą w Naturze",
+    "menu": "Menu główne",
+    "nav": {
+      "home": "Strona główna",
+      "cabins": "Domki",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "booking": "Rezerwacja"
+    },
+    "buttons": {
+      "bookNow": "Zarezerwuj teraz",
+      "seeMore": "Zobacz więcej",
+      "send": "Wyślij",
+      "cancel": "Anuluj"
+    },
+    "languages": {
+      "pl": "Polski",
+      "en": "Angielski",
+      "de": "Niemiecki"
+    }
+  },
+  "footer": {
+    "description": "Wypoczynek w sercu natury, z dala od zgiełku miasta.",
+    "navigation": "Nawigacja",
+    "contact": "Kontakt",
+    "address": "ul. Leśna 123, 11-500 Giżycko",
+    "phone": "Telefon",
+    "email": "Email",
+    "followUs": "Śledź nas",
+    "rights": "Wszelkie prawa zastrzeżone",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "links": {
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "cookies": "Polityka cookies"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Domki Wypoczynkowe \"Pod Sosnami\"",
+      "subtitle": "Twoje wymarzone miejsce na odpoczynek w sercu natury"
+    },
+    "features": {
+      "title": "Dlaczego warto wybrać nasze domki?",
+      "location": {
+        "title": "Lokalizacja",
+        "description": "Położone w sercu natury, z dala od miejskiego zgiełku. Otoczone lasem i jeziorem, idealne na rodzinny wypoczynek."
+      },
+      "comfort": {
+        "title": "Komfort",
+        "description": "W pełni wyposażone domki z wszystkimi udogodnieniami. Przestronne wnętrza i przytulne zakątki dla każdego gościa."
+      },
+      "nature": {
+        "title": "Natura",
+        "description": "Bezpośredni dostęp do lasu i jeziora. Możliwość wędkowania, pływania kajakiem i spacerów po leśnych ścieżkach."
+      },
+      "relax": {
+        "title": "Relaks",
+        "description": "Idealne miejsce na odpoczynek i regenerację. Cisza i spokój, które pozwolą Ci zapomnieć o codziennych obowiązkach."
+      }
+    },
+    "cta": {
+      "title": "Gotowy na niezapomniany wypoczynek?",
+      "description": "Zarezerwuj swój pobyt już dziś i odkryj magię spokojnego życia wśród natury!"
+    }
+  },
+  "cabins": {
+    "title": "Nasze Domki",
+    "details": {
+      "capacity": "Pojemność",
+      "price": "Cena",
+      "perNight": "za noc",
+      "amenities": "Udogodnienia",
+      "description": "Opis",
+      "bookNow": "Zarezerwuj teraz",
+      "people": "osób",
+      "showImage": "Pokaż zdjęcie",
+      "bedrooms": "sypialnie",
+      "bathrooms": "łazienki",
+      "area": "powierzchnia",
+      "backToList": "Powrót do listy domków",
+      "rules": "Regulamin pobytu",
+      "location": "Lokalizacja",
+      "reviews": "Opinie",
+      "nearby": "W pobliżu",
+      "lake": "Jezioro",
+      "forest": "Las",
+      "shop": "Sklep spożywczy",
+      "restaurant": "Restauracja",
+      "bikeRental": "Wypożyczalnia rowerów",
+      "waterEquipment": "Wypożyczalnia sprzętu wodnego"
+    }
+  },
+  "booking": {
+    "title": "Rezerwacja",
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Email",
+      "phone": "Telefon",
+      "checkIn": "Data przyjazdu",
+      "checkOut": "Data wyjazdu",
+      "guests": "Liczba gości",
+      "cabin": "Wybierz domek",
+      "selectCabin": "Wybierz domek",
+      "message": "Wiadomość",
+      "submit": "Wyślij rezerwację",
+      "success": "Dziękujemy za rezerwację! Skontaktujemy się z Tobą wkrótce."
+    }
+  },
+  "about": {
+    "title": "O nas",
+    "description": "Poznaj historię naszego miejsca i zespół, który dba o Twoje zadowolenie.",
+    "team": {
+      "title": "Nasz zespół",
+      "member1": {
+        "name": "Jan Kowalski",
+        "position": "Właściciel"
+      },
+      "member2": {
+        "name": "Anna Nowak",
+        "position": "Manager"
+      },
+      "member3": {
+        "name": "Piotr Wiśniewski",
+        "position": "Opiekun terenu"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Skontaktuj się z nami. Jesteśmy do Twojej dyspozycji i chętnie odpowiemy na wszystkie pytania.",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "Email",
+    "hours": "Godziny otwarcia",
+    "hoursWeekdays": "Poniedziałek - Piątek: 8:00 - 20:00",
+    "hoursWeekends": "Sobota - Niedziela: 9:00 - 18:00",
+    "contactInfo": "Informacje kontaktowe",
+    "form": {
+      "title": "Formularz kontaktowy",
+      "name": "Imię i nazwisko",
+      "email": "Email",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "send": "Wyślij wiadomość",
+      "success": "Dziękujemy za wiadomość. Odpowiemy najszybciej jak to możliwe.",
+      "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na moje zapytanie.",
+      "selectSubject": "Wybierz temat",
+      "reservation": "Rezerwacja",
+      "inquiry": "Zapytanie ogólne",
+      "feedback": "Opinia",
+      "financial": "Doradztwo finansowe",
+      "legal": "Wsparcie prawne"
+    },
+    "map": {
+      "title": "Nasza lokalizacja",
+      "placeholder": "Mapa zostanie wkrótce dodana",
+      "directions": "Wskazówki dojazdu"
+    },
+    "faq": {
+      "title": "Najczęściej zadawane pytania",
+      "checkIn": "Jakie są godziny zameldowania i wymeldowania?",
+      "checkInAnswer": "Zameldowanie jest możliwe od godziny 15:00, a wymeldowanie do godziny 11:00. W razie potrzeby wcześniejszego zameldowania lub późniejszego wymeldowania, prosimy o kontakt z recepcją - jeśli będzie to możliwe, postaramy się dostosować do Państwa potrzeb.",
+      "pets": "Czy akceptujecie zwierzęta domowe?",
+      "petsAnswer": "Tak, akceptujemy zwierzęta domowe w wybranych domkach za dodatkową opłatą 50 zł za pobyt. Prosimy o wcześniejsze poinformowanie nas o zamiarze przyjazdu ze zwierzęciem.",
+      "financial": "Czy oferujecie doradztwo finansowe związane z wynajmem domków?",
+      "financialAnswer": "Tak, nasza właścicielka Iza jest ekspertem w dziedzinie finansów i prawa nieruchomości. Oferujemy konsultacje dotyczące aspektów finansowych i prawnych wynajmu krótko- i długoterminowego, a także doradztwo w zakresie inwestycji w nieruchomości wakacyjne. Więcej informacji można uzyskać kontaktując się bezpośrednio z nami.",
+      "attractions": "Jakie atrakcje znajdują się w okolicy?",
+      "attractionsAnswer": "W okolicy znajduje się wiele atrakcji, w tym jeziora z plażami i możliwością uprawiania sportów wodnych, szlaki piesze i rowerowe, zabytki architektury oraz lokalne restauracje serwujące regionalne potrawy. W recepcji dostępne są mapy i broszury z pełną informacją o okolicznych atrakcjach."
+    }
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "message": "Przepraszamy, ale strona której szukasz nie istnieje.",
+    "description": "Strona 404 - nie znaleziono",
+    "backToHome": "Wróć do strony głównej"
+  }
+} 

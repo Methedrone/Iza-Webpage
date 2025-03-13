@@ -13,10 +13,10 @@ const Footer = () => {
           <h3>Nawigacja</h3>
           <ul>
             <li><Link to="/">Strona główna</Link></li>
-            <li><Link to="/cabins">Domki</Link></li>
-            <li><Link to="/booking">Rezerwacja</Link></li>
-            <li><Link to="/about">O nas</Link></li>
-            <li><Link to="/contact">Kontakt</Link></li>
+            <li><Link to="/domki">Domki</Link></li>
+            <li><Link to="/rezerwacja">Rezerwacja</Link></li>
+            <li><Link to="/o-nas">O nas</Link></li>
+            <li><Link to="/kontakt">Kontakt</Link></li>
           </ul>
         </div>
         <div className="footer__section">

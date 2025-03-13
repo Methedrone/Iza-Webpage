@@ -1,0 +1,67 @@
+@import './global.css';
+@import './header.css';
+@import './contact.css';
+
+:root {
+  --color-primary: #2C5530;
+  --color-primary-light: #3E7841;
+  --color-primary-dark: #1A331D;
+  --color-secondary: #8B4513;
+  --color-secondary-light: #A0522D;
+  --color-secondary-dark: #6B3410;
+  --color-accent: #FFD700;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Font settings */
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--color-gray-900);
+  background-color: var(--color-gray-100);
+}
+
+/* Layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Dodanie wygładzania czcionek */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reszta stylów pozostaje bez zmian */
+// ... existing code ... 

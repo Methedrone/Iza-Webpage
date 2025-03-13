@@ -1,0 +1,87 @@
+{
+  "common": {
+    "siteName": "Sam ze sobą w naturze",
+    "nav": {
+      "home": "Strona główna",
+      "cabins": "Domki",
+      "booking": "Rezerwacja",
+      "about": "O nas",
+      "contact": "Kontakt"
+    }
+  },
+  "booking": {
+    "title": "Rezerwacja",
+    "description": "Zarezerwuj swój pobyt w naszych domkach",
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Adres e-mail",
+      "phone": "Numer telefonu",
+      "checkIn": "Data przyjazdu",
+      "checkOut": "Data wyjazdu",
+      "guests": "Liczba gości",
+      "cabin": "Wybierz domek",
+      "message": "Dodatkowe uwagi",
+      "submit": "Zarezerwuj",
+      "success": "Dziękujemy za rezerwację! Skontaktujemy się z Tobą wkrótce.",
+      "errors": {
+        "name": "Imię i nazwisko jest wymagane",
+        "email": {
+          "required": "Adres e-mail jest wymagany",
+          "invalid": "Nieprawidłowy format adresu e-mail"
+        },
+        "phone": {
+          "required": "Numer telefonu jest wymagany",
+          "invalid": "Nieprawidłowy format numeru telefonu"
+        },
+        "checkIn": "Data przyjazdu jest wymagana",
+        "checkOut": {
+          "required": "Data wyjazdu jest wymagana",
+          "invalid": "Data wyjazdu musi być późniejsza niż data przyjazdu"
+        },
+        "guests": "Liczba gości jest wymagana"
+      }
+    }
+  },
+  "footer": {
+    "description": "Wypoczynek w sercu natury, z dala od zgiełku miasta.",
+    "navigation": "Nawigacja",
+    "contact": "Kontakt",
+    "address": "ul. Leśna 123, 11-500 Giżycko",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "followUs": "Śledź nas",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "links": {
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "cookies": "Polityka cookies"
+    }
+  },
+  "gallery": {
+    "title": "Galeria",
+    "description": "Zobacz zdjęcia naszych domków i okolicy"
+  },
+  "activities": {
+    "title": "Atrakcje",
+    "description": "Odkryj atrakcje i aktywności dostępne w naszej okolicy"
+  },
+  "prices": {
+    "title": "Cennik",
+    "description": "Sprawdź ceny naszych domków i usług"
+  },
+  "regulations": {
+    "title": "Regulamin",
+    "description": "Zapoznaj się z regulaminem pobytu"
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Przepraszamy, ale strona której szukasz nie istnieje",
+    "message": "Przepraszamy, ale strona której szukasz nie istnieje.",
+    "backToHome": "Wróć do strony głównej"
+  }
+} 

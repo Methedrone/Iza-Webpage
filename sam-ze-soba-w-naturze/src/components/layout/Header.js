@@ -35,10 +35,10 @@ const Header = () => {
         >
           <ul>
             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Strona główna</Link></li>
-            <li><Link to="/cabins" onClick={() => setIsMenuOpen(false)}>Domki</Link></li>
-            <li><Link to="/booking" onClick={() => setIsMenuOpen(false)}>Rezerwacja</Link></li>
-            <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>O nas</Link></li>
-            <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Kontakt</Link></li>
+            <li><Link to="/domki" onClick={() => setIsMenuOpen(false)}>Domki</Link></li>
+            <li><Link to="/rezerwacja" onClick={() => setIsMenuOpen(false)}>Rezerwacja</Link></li>
+            <li><Link to="/o-nas" onClick={() => setIsMenuOpen(false)}>O nas</Link></li>
+            <li><Link to="/kontakt" onClick={() => setIsMenuOpen(false)}>Kontakt</Link></li>
           </ul>
         </nav>
       </div>

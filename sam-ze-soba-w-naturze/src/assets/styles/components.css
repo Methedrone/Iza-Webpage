@@ -1,0 +1,193 @@
+/* Hero Section */
+.hero {
+  background-color: var(--color-surface);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  color: var(--color-text);
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero p {
+  color: var(--color-text-light);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Features Section */
+.features {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-surface-alt);
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.feature {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* CTA Section */
+.cta {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  background-color: var(--color-surface);
+}
+
+.cta h2 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Cabin Cards */
+.cabins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl) 0;
+}
+
+.cabin-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.cabin-card:hover {
+  transform: translateY(-5px);
+}
+
+.cabin-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cabin-card h4 {
+  padding: var(--spacing-md);
+  margin: 0;
+  color: var(--color-text);
+}
+
+.cabin-card p {
+  padding: 0 var(--spacing-md);
+  margin: 0;
+  color: var(--color-text-light);
+}
+
+.cabin-card .price {
+  padding: var(--spacing-md);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-surface-alt);
+}
+
+.testimonials h3 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.testimonial {
+  background-color: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.testimonial-author span {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.stars {
+  color: var(--color-warning);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .features__grid,
+  .cabins-grid {
+    grid-template-columns: 1fr;
+  }
+} 

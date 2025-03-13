@@ -1,0 +1,32 @@
+{
+  "common": {
+    "siteName": "Alone with yourself in nature",
+    "nav": {
+      "home": "Home",
+      "cabins": "Cabins",
+      "booking": "Booking",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "description": "Rest in the heart of nature, away from the city noise.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "address": "ul. Leśna 123, 11-500 Giżycko",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow us",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  }
+} 

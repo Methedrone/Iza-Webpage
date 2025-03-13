@@ -1,4 +1,4 @@
-@import './assets/styles/variables.css';
+@import './variables.css';
 
 /* Reset i podstawowe style */
 * {
@@ -233,4 +233,4 @@ input:focus, textarea:focus, select:focus {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-}
+} 

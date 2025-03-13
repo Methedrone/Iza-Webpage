@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Booking = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const searchParams = new URLSearchParams(location.search);
   const cabinId = searchParams.get('cabinId');
 
@@ -14,7 +13,8 @@ const Booking = () => {
     checkIn: '',
     checkOut: '',
     guests: '1',
-    message: ''
+    message: '',
+    cabinId: cabinId || ''
   });
 
   const [errors, setErrors] = useState({});
@@ -101,7 +101,8 @@ const Booking = () => {
           checkIn: '',
           checkOut: '',
           guests: '1',
-          message: ''
+          message: '',
+          cabinId: cabinId || ''
         });
         setSubmitSuccess(false);
       }, 3000);

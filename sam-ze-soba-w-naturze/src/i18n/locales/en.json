@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Alone in Nature",
+    "menu": "Main menu",
+    "nav": {
+      "home": "Home",
+      "cabins": "Cabins",
+      "about": "About",
+      "contact": "Contact",
+      "booking": "Booking"
+    },
+    "buttons": {
+      "bookNow": "Book now",
+      "seeMore": "See more",
+      "send": "Send",
+      "cancel": "Cancel"
+    },
+    "languages": {
+      "pl": "Polish",
+      "en": "English",
+      "de": "German"
+    }
+  },
+  "footer": {
+    "description": "Your place to rest in nature",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "address": "ul. Leśna 123, 11-500 Giżycko",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow us",
+    "rights": "All rights reserved",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Holiday Cabins \"Under the Pines\"",
+      "subtitle": "Your dream getaway in the heart of nature"
+    },
+    "features": {
+      "title": "Why choose our cabins?",
+      "location": {
+        "title": "Location",
+        "description": "Located in the heart of nature, far from city noise. Surrounded by forest and lake, perfect for family holidays."
+      },
+      "comfort": {
+        "title": "Comfort",
+        "description": "Fully equipped cabins with all amenities. Spacious interiors and cozy corners for every guest."
+      },
+      "nature": {
+        "title": "Nature",
+        "description": "Direct access to forest and lake. Possibility of fishing, kayaking, and walking along forest trails."
+      },
+      "relax": {
+        "title": "Relaxation",
+        "description": "Perfect place for rest and regeneration. Peace and quiet that will help you forget about daily responsibilities."
+      }
+    },
+    "cta": {
+      "title": "Ready for an unforgettable holiday?",
+      "description": "Book your stay today and discover the magic of peaceful life in nature!"
+    }
+  },
+  "cabins": {
+    "title": "Our Cabins",
+    "details": {
+      "capacity": "Capacity",
+      "price": "Price",
+      "perNight": "per night",
+      "amenities": "Amenities",
+      "description": "Description",
+      "bookNow": "Book Now",
+      "people": "people",
+      "showImage": "Show image",
+      "bedrooms": "bedrooms",
+      "bathrooms": "bathrooms",
+      "area": "area",
+      "backToList": "Back to cabins list",
+      "rules": "Stay rules",
+      "location": "Location",
+      "reviews": "Reviews",
+      "nearby": "Nearby",
+      "lake": "Lake",
+      "forest": "Forest",
+      "shop": "Grocery store",
+      "restaurant": "Restaurant",
+      "bikeRental": "Bike rental",
+      "waterEquipment": "Water equipment rental"
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "checkIn": "Check-in Date",
+      "checkOut": "Check-out Date",
+      "guests": "Number of Guests",
+      "cabin": "Select Cabin",
+      "selectCabin": "Select a cabin",
+      "message": "Message",
+      "submit": "Submit Booking",
+      "success": "Thank you for your booking! We will contact you soon."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn about our place's history and the team that takes care of your satisfaction.",
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "name": "John Smith",
+        "position": "Owner"
+      },
+      "member2": {
+        "name": "Anna Brown",
+        "position": "Manager"
+      },
+      "member3": {
+        "name": "Peter Wilson",
+        "position": "Grounds Keeper"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with us. We are at your disposal and happy to answer all your questions.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "hoursWeekdays": "Monday - Friday: 8:00 AM - 8:00 PM",
+    "hoursWeekends": "Saturday - Sunday: 9:00 AM - 6:00 PM",
+    "contactInfo": "Contact Information",
+    "form": {
+      "title": "Contact Form",
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Thank you for your message. We will respond as soon as possible.",
+      "consent": "I consent to the processing of my personal data in order to respond to my inquiry.",
+      "selectSubject": "Select subject",
+      "reservation": "Reservation",
+      "inquiry": "General inquiry",
+      "feedback": "Feedback",
+      "financial": "Financial advice",
+      "legal": "Legal support"
+    },
+    "map": {
+      "title": "Our Location",
+      "placeholder": "Map will be added soon",
+      "directions": "Directions"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "checkIn": "What are the check-in and check-out times?",
+      "checkInAnswer": "Check-in is available from 3:00 PM, and check-out is until 11:00 AM. If you need an earlier check-in or later check-out, please contact the reception - if possible, we will try to accommodate your needs.",
+      "pets": "Do you accept pets?",
+      "petsAnswer": "Yes, we accept pets in selected cabins for an additional fee of 50 PLN per stay. Please inform us in advance about your intention to arrive with a pet.",
+      "financial": "Do you offer financial advice related to cabin rentals?",
+      "financialAnswer": "Yes, our owner Iza is an expert in real estate finance and law. We offer consultations on financial and legal aspects of short and long-term rentals, as well as advice on investing in holiday properties. More information can be obtained by contacting us directly.",
+      "attractions": "What attractions are in the area?",
+      "attractionsAnswer": "There are many attractions in the area, including lakes with beaches and water sports facilities, hiking and biking trails, architectural monuments, and local restaurants serving regional dishes. Maps and brochures with complete information about nearby attractions are available at the reception."
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Sorry, but the page you are looking for does not exist.",
+    "description": "404 Page - Not Found",
+    "backToHome": "Back to Homepage"
+  }
+} 

@@ -1,0 +1,57 @@
+:root {
+  /* Kolory podstawowe */
+  --color-primary: #2C4A2C; /* Bardzo ciemny zielony lasu */
+  --color-secondary: #3C5A3C; /* Ciemniejszy zielony lasu */
+  --color-accent: #947F72; /* Ciemny beż */
+  --color-background: #D5D6D3; /* Ciemniejszy szaro-zielony */
+  --color-text: #0C1E0D; /* Prawie czarny zielony */
+  --color-text-light: #2A3B2A; /* Ciemny zielony do tekstu */
+  
+  /* Kolory dodatkowe */
+  --color-success: #4B6E4B; /* Ciemny leśny zielony */
+  --color-warning: #A69578; /* Ciemny beż */
+  --color-error: #946565; /* Ciemny róż */
+  --color-info: #658294; /* Ciemny niebieski */
+  
+  /* Kolory tła */
+  --color-surface: #E0E1DE; /* Ciemniejszy szaro-zielony */
+  --color-surface-alt: #D8DAD7; /* Jeszcze ciemniejszy szaro-zielony */
+  --color-surface-hover: #CDD0CC; /* Najciemniejszy szaro-zielony */
+  
+  /* Cienie */
+  --shadow-sm: 0 2px 4px rgba(12, 30, 13, 0.15);
+  --shadow-md: 0 4px 6px rgba(12, 30, 13, 0.2);
+  --shadow-lg: 0 10px 15px rgba(12, 30, 13, 0.25);
+  
+  /* Zaokrąglenia */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+  
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+} 

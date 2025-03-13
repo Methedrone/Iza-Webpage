@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Allein in der Natur",
+    "menu": "Hauptmenü",
+    "nav": {
+      "home": "Startseite",
+      "cabins": "Hütten",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "booking": "Buchung"
+    },
+    "buttons": {
+      "bookNow": "Jetzt buchen",
+      "seeMore": "Mehr sehen",
+      "send": "Senden",
+      "cancel": "Abbrechen"
+    },
+    "languages": {
+      "pl": "Polnisch",
+      "en": "Englisch",
+      "de": "Deutsch"
+    }
+  },
+  "footer": {
+    "description": "Ihr Ort zum Entspannen in der Natur",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "address": "ul. Leśna 123, 11-500 Giżycko",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "followUs": "Folgen Sie uns",
+    "rights": "Alle Rechte vorbehalten",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "links": {
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Richtlinie"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Ferienhütten \"Unter den Kiefern\"",
+      "subtitle": "Ihr Traumurlaub mitten in der Natur"
+    },
+    "features": {
+      "title": "Warum unsere Hütten wählen?",
+      "location": {
+        "title": "Lage",
+        "description": "Gelegen im Herzen der Natur, fernab vom Stadtlärm. Umgeben von Wald und See, ideal für Familienurlaub."
+      },
+      "comfort": {
+        "title": "Komfort",
+        "description": "Voll ausgestattete Hütten mit allen Annehmlichkeiten. Geräumige Innenräume und gemütliche Ecken für jeden Gast."
+      },
+      "nature": {
+        "title": "Natur",
+        "description": "Direkter Zugang zu Wald und See. Möglichkeit zum Angeln, Kajakfahren und Wandern auf Waldwegen."
+      },
+      "relax": {
+        "title": "Entspannung",
+        "description": "Perfekter Ort zum Ausruhen und Regenerieren. Ruhe und Frieden, die Sie die täglichen Pflichten vergessen lassen."
+      }
+    },
+    "cta": {
+      "title": "Bereit für einen unvergesslichen Urlaub?",
+      "description": "Buchen Sie Ihren Aufenthalt noch heute und entdecken Sie die Magie des friedlichen Lebens in der Natur!"
+    }
+  },
+  "cabins": {
+    "title": "Unsere Hütten",
+    "details": {
+      "capacity": "Kapazität",
+      "price": "Preis",
+      "perNight": "pro Nacht",
+      "amenities": "Ausstattung",
+      "description": "Beschreibung",
+      "bookNow": "Jetzt buchen",
+      "people": "Personen",
+      "showImage": "Bild anzeigen",
+      "bedrooms": "Schlafzimmer",
+      "bathrooms": "Badezimmer",
+      "area": "Fläche",
+      "backToList": "Zurück zur Hüttenliste",
+      "rules": "Aufenthaltsregeln",
+      "location": "Lage",
+      "reviews": "Bewertungen",
+      "nearby": "In der Nähe",
+      "lake": "See",
+      "forest": "Wald",
+      "shop": "Lebensmittelgeschäft",
+      "restaurant": "Restaurant",
+      "bikeRental": "Fahrradverleih",
+      "waterEquipment": "Wasserausrüstungsverleih"
+    }
+  },
+  "booking": {
+    "title": "Buchung",
+    "form": {
+      "name": "Vor- und Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "checkIn": "Anreisedatum",
+      "checkOut": "Abreisedatum",
+      "guests": "Anzahl der Gäste",
+      "cabin": "Hütte auswählen",
+      "selectCabin": "Hütte auswählen",
+      "message": "Nachricht",
+      "submit": "Buchung absenden",
+      "success": "Vielen Dank für Ihre Buchung! Wir werden uns in Kürze bei Ihnen melden."
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Lernen Sie die Geschichte unseres Ortes und das Team kennen, das sich um Ihre Zufriedenheit kümmert.",
+    "team": {
+      "title": "Unser Team",
+      "member1": {
+        "name": "Hans Schmidt",
+        "position": "Besitzer"
+      },
+      "member2": {
+        "name": "Anna Braun",
+        "position": "Managerin"
+      },
+      "member3": {
+        "name": "Peter Weber",
+        "position": "Geländepfleger"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Kontaktieren Sie uns. Wir stehen Ihnen zur Verfügung und beantworten gerne alle Ihre Fragen.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "hoursWeekdays": "Montag - Freitag: 8:00 - 20:00 Uhr",
+    "hoursWeekends": "Samstag - Sonntag: 9:00 - 18:00 Uhr",
+    "contactInfo": "Kontaktinformationen",
+    "form": {
+      "title": "Kontaktformular",
+      "name": "Vor- und Nachname",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht senden",
+      "success": "Vielen Dank für Ihre Nachricht. Wir werden so schnell wie möglich antworten.",
+      "consent": "Ich stimme der Verarbeitung meiner persönlichen Daten zu, um auf meine Anfrage zu antworten.",
+      "selectSubject": "Thema auswählen",
+      "reservation": "Reservierung",
+      "inquiry": "Allgemeine Anfrage",
+      "feedback": "Feedback",
+      "financial": "Finanzberatung",
+      "legal": "Rechtliche Unterstützung"
+    },
+    "map": {
+      "title": "Unser Standort",
+      "placeholder": "Karte wird in Kürze hinzugefügt",
+      "directions": "Anfahrt"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "checkIn": "Wie sind die Check-in- und Check-out-Zeiten?",
+      "checkInAnswer": "Check-in ist ab 15:00 Uhr möglich, und Check-out ist bis 11:00 Uhr. Wenn Sie einen früheren Check-in oder einen späteren Check-out benötigen, kontaktieren Sie bitte die Rezeption - wenn möglich, werden wir versuchen, Ihren Bedürfnissen entgegenzukommen.",
+      "pets": "Akzeptieren Sie Haustiere?",
+      "petsAnswer": "Ja, wir akzeptieren Haustiere in ausgewählten Hütten gegen eine zusätzliche Gebühr von 50 PLN pro Aufenthalt. Bitte informieren Sie uns im Voraus über Ihre Absicht, mit einem Haustier anzureisen.",
+      "financial": "Bieten Sie Finanzberatung im Zusammenhang mit Hüttenvermietungen an?",
+      "financialAnswer": "Ja, unsere Besitzerin Iza ist Expertin für Immobilienfinanzierung und -recht. Wir bieten Beratung zu finanziellen und rechtlichen Aspekten von Kurz- und Langzeitvermietungen sowie Beratung zu Investitionen in Ferienimmobilien. Weitere Informationen erhalten Sie, indem Sie uns direkt kontaktieren.",
+      "attractions": "Welche Attraktionen gibt es in der Umgebung?",
+      "attractionsAnswer": "In der Umgebung gibt es viele Attraktionen, darunter Seen mit Stränden und Wassersportmöglichkeiten, Wander- und Radwege, architektonische Denkmäler und lokale Restaurants, die regionale Gerichte servieren. Karten und Broschüren mit vollständigen Informationen über nahegelegene Attraktionen sind an der Rezeption erhältlich."
+    }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "message": "Entschuldigung, aber die gesuchte Seite existiert nicht.",
+    "description": "404 Seite - Nicht gefunden",
+    "backToHome": "Zurück zur Startseite"
+  }
+} 

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ 
   title = 'Domki Wypoczynkowe "Pod Sosnami"',
@@ -8,6 +8,10 @@ const SEO = ({
   image = '/images/og-image.jpg',
   url = 'https://pod-sosnami.pl'
 }) => {
+  useEffect(() => {
+    // Tutaj możemy dodać dodatkową logikę, która musi być wykonana po zamontowaniu komponentu
+  }, []);
+
   return (
     <Helmet>
       {/* Podstawowe meta tagi */}
