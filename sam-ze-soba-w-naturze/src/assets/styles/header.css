@@ -122,6 +122,13 @@
   border-color: var(--color-primary);
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  z-index: var(--z-index-sticky);
+}
+
 /* Responsywność dla urządzeń mobilnych */
 @media (max-width: 768px) {
   .header__container {
@@ -204,6 +211,10 @@
   .header__lang-btn {
     padding: var(--spacing-sm) var(--spacing-md);
     margin: 0 var(--spacing-xs);
+  }
+  
+  .header__actions {
+    gap: var(--spacing-sm);
   }
 }
 

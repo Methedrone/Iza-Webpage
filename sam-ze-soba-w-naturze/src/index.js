@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './i18n/i18n';
 import './assets/styles/variables.css';
 import './assets/styles/index.css';
 import './assets/styles/header.css';

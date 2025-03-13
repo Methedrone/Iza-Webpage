@@ -1,32 +1,32 @@
 :root {
-  /* Kolory podstawowe */
-  --color-primary: #2C4A2C; /* Bardzo ciemny zielony lasu */
-  --color-secondary: #3C5A3C; /* Ciemniejszy zielony lasu */
-  --color-accent: #947F72; /* Ciemny beż */
-  --color-background: #D5D6D3; /* Ciemniejszy szaro-zielony */
-  --color-text: #0C1E0D; /* Prawie czarny zielony */
-  --color-text-light: #2A3B2A; /* Ciemny zielony do tekstu */
+  /* Kolory podstawowe - jasny motyw */
+  --color-primary: #6A8E7F; /* Pastelowy leśny zielony */
+  --color-secondary: #A2B9A9; /* Jaśniejszy pastelowy zielony */
+  --color-accent: #D0AF97; /* Pastelowy beż */
+  --color-background: #F4F1EC; /* Bardzo jasny pastelowy beż */
+  --color-text: #36453B; /* Ciemny zielonkawy */
+  --color-text-light: #57695F; /* Jasniejszy zielonkawy */
   
   /* Kolory dodatkowe */
-  --color-success: #4B6E4B; /* Ciemny leśny zielony */
-  --color-warning: #A69578; /* Ciemny beż */
-  --color-error: #946565; /* Ciemny róż */
-  --color-info: #658294; /* Ciemny niebieski */
+  --color-success: #8FB3A6; /* Pastelowy zielony */
+  --color-warning: #DFCFBD; /* Pastelowy beż */
+  --color-error: #D8A9A9; /* Pastelowy róż */
+  --color-info: #A9C1D8; /* Pastelowy niebieski */
   
   /* Kolory tła */
-  --color-surface: #E0E1DE; /* Ciemniejszy szaro-zielony */
-  --color-surface-alt: #D8DAD7; /* Jeszcze ciemniejszy szaro-zielony */
-  --color-surface-hover: #CDD0CC; /* Najciemniejszy szaro-zielony */
+  --color-surface: #F7F5F2; /* Bardzo jasny beż */
+  --color-surface-alt: #EFECE8; /* Delikatnie ciemniejszy beż */
+  --color-surface-hover: #E8E4DF; /* Jeszcze ciemniejszy beż */
   
   /* Cienie */
-  --shadow-sm: 0 2px 4px rgba(12, 30, 13, 0.15);
-  --shadow-md: 0 4px 6px rgba(12, 30, 13, 0.2);
-  --shadow-lg: 0 10px 15px rgba(12, 30, 13, 0.25);
+  --shadow-sm: 0 2px 4px rgba(54, 69, 59, 0.08);
+  --shadow-md: 0 4px 6px rgba(54, 69, 59, 0.12);
+  --shadow-lg: 0 10px 15px rgba(54, 69, 59, 0.16);
   
   /* Zaokrąglenia */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -54,4 +54,31 @@
   --z-index-modal: 1050;
   --z-index-popover: 1060;
   --z-index-tooltip: 1070;
+}
+
+/* Kolory dla trybu ciemnego */
+[data-theme="dark"] {
+  /* Kolory podstawowe - ciemny motyw */
+  --color-primary: #5D8273; /* Ciemniejszy pastelowy leśny zielony */
+  --color-secondary: #3F5C4E; /* Jeszcze ciemniejszy zielony */
+  --color-accent: #BD9981; /* Ciemniejszy pastelowy beż */
+  --color-background: #1A2723; /* Ciemny zielonkawy czarny */
+  --color-text: #E0E6E3; /* Jasny zielonkawy biały */
+  --color-text-light: #B4C5BC; /* Jasny pastelowy zielony */
+  
+  /* Kolory dodatkowe */
+  --color-success: #4D7B6A; /* Ciemniejszy pastelowy zielony */
+  --color-warning: #BCA991; /* Ciemniejszy pastelowy beż */
+  --color-error: #A97373; /* Ciemniejszy pastelowy róż */
+  --color-info: #739AAF; /* Ciemniejszy pastelowy niebieski */
+  
+  /* Kolory tła */
+  --color-surface: #26352F; /* Ciemny zielonkawy */
+  --color-surface-alt: #2D3D37; /* Ciemniejszy zielonkawy */
+  --color-surface-hover: #34443E; /* Jeszcze ciemniejszy zielonkawy */
+  
+  /* Cienie */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
 } 

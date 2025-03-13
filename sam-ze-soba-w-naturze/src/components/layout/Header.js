@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ThemeToggle from '../UI/ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,17 +16,21 @@ const Header = () => {
           Sam Ze Sobą w Naturze
         </Link>
         
-        <button 
-          className="header__menu-toggle"
-          aria-expanded={isMenuOpen}
-          aria-controls="header-nav"
-          onClick={toggleMenu}
-          aria-label="Menu główne"
-        >
-          <span className="header__menu-icon"></span>
-          <span className="header__menu-icon"></span>
-          <span className="header__menu-icon"></span>
-        </button>
+        <div className="header__actions">
+          <ThemeToggle />
+          
+          <button 
+            className="header__menu-toggle"
+            aria-expanded={isMenuOpen}
+            aria-controls="header-nav"
+            onClick={toggleMenu}
+            aria-label="Menu główne"
+          >
+            <span className="header__menu-icon"></span>
+            <span className="header__menu-icon"></span>
+            <span className="header__menu-icon"></span>
+          </button>
+        </div>
 
         <nav 
           className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}
