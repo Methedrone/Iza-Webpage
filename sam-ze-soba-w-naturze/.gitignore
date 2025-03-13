@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/sam-ze-soba-w-naturze/node_modules
 # testing
 /coverage
 

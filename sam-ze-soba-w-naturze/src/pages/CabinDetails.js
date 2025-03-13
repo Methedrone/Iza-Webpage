@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const cabins = [
   {
@@ -9,6 +10,9 @@ const cabins = [
     price: '200 zł/noc',
     capacity: '2 osoby',
     image: '/images/cabin1.jpg',
+    imageSmall: '/images/cabin1-small.jpg',
+    imageMedium: '/images/cabin1-medium.jpg',
+    imageLarge: '/images/cabin1-large.jpg',
     amenities: [
       'Łóżko małżeńskie',
       'Kuchnia',
@@ -26,6 +30,9 @@ const cabins = [
     price: '300 zł/noc',
     capacity: '4 osoby',
     image: '/images/cabin2.jpg',
+    imageSmall: '/images/cabin2-small.jpg',
+    imageMedium: '/images/cabin2-medium.jpg',
+    imageLarge: '/images/cabin2-large.jpg',
     amenities: [
       '2 sypialnie',
       'Kuchnia',
@@ -44,6 +51,9 @@ const cabins = [
     price: '250 zł/noc',
     capacity: '3 osoby',
     image: '/images/cabin3.jpg',
+    imageSmall: '/images/cabin3-small.jpg',
+    imageMedium: '/images/cabin3-medium.jpg',
+    imageLarge: '/images/cabin3-large.jpg',
     amenities: [
       'Łóżko małżeńskie + pojedyncze',
       'Kuchnia',
@@ -64,7 +74,7 @@ const CabinDetails = () => {
   if (!cabin) {
     return (
       <div className="cabin-details">
-        <h1>Domek nie został znaleziony</h1>
+        <h1>Nie znaleziono domku</h1>
         <Link to="/cabins" className="btn btn-primary">
           Powrót do listy domków
         </Link>
@@ -73,38 +83,58 @@ const CabinDetails = () => {
   }
 
   return (
-    <div className="cabin-details">
-      <div className="cabin-details__header">
-        <h1>{cabin.name}</h1>
-        <p className="cabin-details__price">{cabin.price}</p>
-      </div>
-
-      <div className="cabin-details__image">
-        <img src={cabin.image} alt={cabin.name} />
-      </div>
-
-      <div className="cabin-details__content">
-        <div className="cabin-details__description">
-          <h2>Opis</h2>
-          <p>{cabin.longDescription}</p>
+    <>
+      <SEO 
+        title={`${cabin.name} - Domki Wypoczynkowe 'Pod Sosnami'`}
+        description={cabin.description}
+        keywords={`domki wypoczynkowe, noclegi, wakacje, wypoczynek, ${cabin.name.toLowerCase()}, domek dla ${cabin.capacity}`}
+        image={cabin.image}
+        url={`https://pod-sosnami.pl/cabins/${cabin.id}`}
+      />
+      
+      <div className="cabin-details">
+        <div className="cabin-details__header">
+          <h1>{cabin.name}</h1>
+          <div className="cabin-details__price">{cabin.price}</div>
         </div>
 
-        <div className="cabin-details__amenities">
-          <h2>Udogodnienia</h2>
-          <ul>
-            {cabin.amenities.map((amenity, index) => (
-              <li key={index}>{amenity}</li>
-            ))}
-          </ul>
+        <div className="cabin-details__image">
+          <img 
+            src={cabin.image}
+            srcSet={`${cabin.imageSmall} 300w, ${cabin.imageMedium} 600w, ${cabin.imageLarge} 900w`}
+            sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px"
+            alt={`${cabin.name} - widok zewnętrzny`}
+            loading="lazy"
+          />
+        </div>
+
+        <div className="cabin-details__content">
+          <div className="cabin-details__description">
+            <h2>Opis</h2>
+            <p>{cabin.longDescription}</p>
+          </div>
+
+          <div className="cabin-details__amenities">
+            <h2>Udogodnienia</h2>
+            <ul>
+              {cabin.amenities.map((amenity, index) => (
+                <li key={index}>{amenity}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="cabin-details__booking">
-          <Link to={`/booking?cabinId=${cabin.id}`} className="btn btn-primary">
+          <Link 
+            to={`/booking?cabin=${cabin.id}`} 
+            className="btn btn-primary"
+            aria-label={`Zarezerwuj domek ${cabin.name}`}
+          >
             Zarezerwuj teraz
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

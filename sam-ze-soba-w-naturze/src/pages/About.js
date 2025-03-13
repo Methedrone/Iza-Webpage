@@ -33,17 +33,35 @@ const About = () => {
           <h2>Nasz Zespół</h2>
           <div className="about__team">
             <div className="about__team-member">
-              <img src="/images/team1.jpg" alt="Jan Kowalski" />
+              <img 
+                src="/images/team1.jpg"
+                srcSet="/images/team1-small.jpg 200w, /images/team1-medium.jpg 400w, /images/team1-large.jpg 600w"
+                sizes="(max-width: 400px) 200px, (max-width: 600px) 400px, 600px"
+                alt="Jan Kowalski - właściciel i założyciel"
+                loading="lazy"
+              />
               <h3>Jan Kowalski</h3>
               <p>Właściciel i założyciel</p>
             </div>
             <div className="about__team-member">
-              <img src="/images/team2.jpg" alt="Anna Nowak" />
+              <img 
+                src="/images/team2.jpg"
+                srcSet="/images/team2-small.jpg 200w, /images/team2-medium.jpg 400w, /images/team2-large.jpg 600w"
+                sizes="(max-width: 400px) 200px, (max-width: 600px) 400px, 600px"
+                alt="Anna Nowak - manager obiektu"
+                loading="lazy"
+              />
               <h3>Anna Nowak</h3>
               <p>Manager obiektu</p>
             </div>
             <div className="about__team-member">
-              <img src="/images/team3.jpg" alt="Piotr Wiśniewski" />
+              <img 
+                src="/images/team3.jpg"
+                srcSet="/images/team3-small.jpg 200w, /images/team3-medium.jpg 400w, /images/team3-large.jpg 600w"
+                sizes="(max-width: 400px) 200px, (max-width: 600px) 400px, 600px"
+                alt="Piotr Wiśniewski - opiekun terenu"
+                loading="lazy"
+              />
               <h3>Piotr Wiśniewski</h3>
               <p>Opiekun terenu</p>
             </div>
