@@ -212,3 +212,1146 @@ footer {
     margin: 0.5rem 0;
   }
 }
+/* Booking Page Styles */
+.booking-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.booking-form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.booking-form .form-group {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+
+.booking-form .form-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.booking-form h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Cabin Selection */
+.cabin-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cabin-option {
+  position: relative;
+}
+
+.cabin-option input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+}
+
+.cabin-option label {
+  display: block;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cabin-option input[type='radio']:checked + label {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.cabin-option img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.cabin-info h4 {
+  margin: 0.5rem 0;
+}
+
+.cabin-info .price {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Date Selection */
+.date-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.date-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.date-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.date-input input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Guests Selection */
+.guests-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.guests-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.guests-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.number-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.number-input button {
+  background: #f0f0f0;
+  border: none;
+  color: #333;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.number-input button:hover {
+  background: #e0e0e0;
+}
+
+.number-input input {
+  flex: 1;
+  text-align: center;
+  border: none;
+  padding: 0.8rem;
+  width: 3rem;
+}
+
+/* Additional Services */
+.additional-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.service-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.service-option input[type='checkbox'] {
+  margin-top: 0.3rem;
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.input-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group.full-width {
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Booking Summary */
+.booking-summary {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.summary-item ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #ccc;
+  font-size: 1.2rem;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.form-actions button {
+  padding: 0.8rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .form-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
+
+/* Cabin Page Styles */
+.cabins-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cabins-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cabin-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.cabin-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.main-image img:hover {
+  transform: scale(1.05);
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+}
+
+.cabin-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cabin-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.cabin-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  background-color: #f0f4f8;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature i {
+  color: var(--primary-color);
+}
+
+.cabin-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.amenities {
+  margin-bottom: 1.5rem;
+}
+
+.amenities h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.amenities ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.amenities li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.amenities li i {
+  color: var(--primary-color);
+}
+
+.cabin-price {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.cabin-price p {
+  font-size: 1.2rem;
+}
+
+.cabin-price span {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+@media (max-width: 992px) {
+  .cabin-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cabin-price {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+/* About Page Styles */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-story {
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image {
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  line-height: 1.8;
+}
+
+.about-text h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-services {
+  margin-bottom: 3rem;
+}
+
+.about-services h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.service-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.team-section {
+  margin-bottom: 3rem;
+}
+
+.team-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-member h4 {
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+.team-member .role {
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 0 1rem 0.5rem;
+}
+
+.team-member p:not(.role) {
+  padding: 0 1rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.cta-section {
+  background-color: var(--secondary-color);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.cta-content {
+  text-align: center;
+  color: white;
+}
+
+.cta-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-content .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+}
+
+/* Contact Page Styles */
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-info {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-details h3,
+.social-media h3,
+.contact-form-container h3 {
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.info-item h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.contact-form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.consent-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.consent-checkbox input {
+  margin-top: 0.3rem;
+  width: auto;
+}
+
+.map-section {
+  margin-bottom: 3rem;
+}
+
+.map-section h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.directions h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.directions ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.directions li {
+  margin-bottom: 0.8rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-bottom: 3rem;
+}
+
+.faq-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.accordion {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #f8f9fa;
+}
+
+.accordion-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.accordion-item.active .accordion-content {
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Cabin Details Page Styles */
+.cabin-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cabin-details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.cabin-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-gallery-image {
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.main-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.main-gallery-image img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.gallery-thumbnail {
+  height: 80px;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.gallery-thumbnail img:hover {
+  opacity: 0.8;
+}
+
+.cabin-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cabin-features-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item i {
+  color: var(--primary-color);
+}
+
+.cabin-description-full h3,
+.cabin-amenities-full h3,
+.cabin-pricing h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.cabin-description-full p {
+  line-height: 1.6;
+}
+
+.amenities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.amenities-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.amenities-list li i {
+  color: var(--primary-color);
+}
+
+.cabin-pricing {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.price-info {
+  font-size: 1.2rem;
+}
+
+.price-value {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.price-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.booking-actions button {
+  flex: 1;
+  padding: 0.8rem 1rem;
+}
+
+.cabin-additional-info {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.info-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  color: #666;
+}
+
+.tab-button:hover {
+  background-color: #f8f9fa;
+}
+
+.tab-button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.rules-list {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.rules-list li {
+  margin-bottom: 0.8rem;
+}
+
+.location-map {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location-info h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.location-info ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.location-info li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.reviewer {
+  font-weight: 500;
+}
+
+.review-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.review-stars {
+  color: #ffc107;
+  margin-bottom: 0.5rem;
+}
+
+.review-content p {
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .cabin-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cabin-details-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

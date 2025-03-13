@@ -11,6 +11,7 @@ import { renderHomePage } from './pages/Home.js';
 import { renderAboutPage } from './pages/About.js';
 import { renderContactPage } from './pages/Contact.js';
 import { renderBookingPage } from './pages/Booking.js';
+import { renderCabinsPage } from './pages/Cabins.js';
 
 // Importuj style
 import './styles/main.css';
@@ -38,7 +39,10 @@ function initNavigation() {
         case 'about':
           renderAboutPage();
           break;
-        case 'projects':
+        case 'cabins':
+          renderCabinsPage();
+          break;
+        case 'booking':
           renderBookingPage();
           break;
         case 'contact':
