@@ -1,0 +1,18 @@
+# Ignoruj pliki build
+build/
+dist/
+
+# Ignoruj node_modules
+node_modules/
+
+# Ignoruj pliki konfiguracyjne
+*.config.js
+.eslintrc.js
+
+# Ignoruj pliki testowe
+**/*.test.js
+**/*.spec.js
+
+# Ignoruj tymczasowe pliki
+.tmp/
+.temp/ 

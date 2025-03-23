@@ -1,71 +1,87 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLeaf, faMountain, faWater, faBed } from '@fortawesome/free-solid-svg-icons';
+import { useLanguage } from '../TranslationContext';
 
 const Home = () => {
+  const { translate } = useLanguage();
+
   return (
     <>
       <SEO 
-        title="Sam ze sobą w naturze - Wypoczynek w sercu lasu"
-        description="Odkryj urokliwe miejsce położone w sercu lasu, idealne na niezapomniany wypoczynek i kontakt z naturą. Komfortowe zakwaterowanie w malowniczej okolicy."
-        keywords="wypoczynek, natura, las, spokój, cisza, domki, mazury, relaks, odpoczynek"
+        title={translate('homePageTitle') || "Sam ze sobą w naturze - Wypoczynek w sercu natury"}
+        description={translate('homePageDescription') || "Odkryj urokliwe domki w sercu natury, idealne miejsce na odpoczynek i relaks z dala od miejskiego zgiełku."}
+        keywords={translate('homePageKeywords') || "domki, wypoczynek, natura, las, odosobnienie, relaks"}
       />
       
-      <div className="home fade-in">
-        <section className="hero slide-in-up">
-          <div className="hero__overlay"></div>
-          <div className="hero__content">
-            <h1>Sam ze sobą w naturze</h1>
-            <p>Odnajdź spokój i harmonię w otoczeniu lasu</p>
-            <Link to="/domki" className="btn btn-primary hover-lift">
-              Zobacz nasze domki
+      <div className="home">
+        <section className="hero fade-in">
+          <div className="hero-content slide-in-up">
+            <h1>{translate('welcome') || "Witamy w Sam ze sobą w naturze"}</h1>
+            <p>{translate('welcomeDescription') || "Odpocznij wśród natury"}</p>
+            <Link to="/cabins" className="btn btn-primary hover-lift pulse">
+              {translate('discoverCabins') || "Odkryj nasze domki"}
             </Link>
           </div>
         </section>
-
-        <section className="features">
-          <h2 className="slide-in-up">Dlaczego warto wybrać to miejsce?</h2>
-          <div className="features__grid">
-            <div className="feature hover-lift">
-              <div className="feature__icon">
-                <FontAwesomeIcon icon={faLeaf} />
-              </div>
-              <h3>Natura</h3>
-              <p>Otoczenie lasu, świeże powietrze i bliskość przyrody</p>
+        
+        <section className="about-preview">
+          <div className="container">
+            <div className="about-preview-content">
+              <h2>{translate('aboutUsTitle') || "Kilka słów o nas"}</h2>
+              <p>{translate('aboutUsPreview') || "Jesteśmy rodzinnym biznesem z pasją do natury. Nasze domki oferują idealne miejsce do odpoczynku, refleksji i połączenia się z otaczającym światem przyrody."}</p>
+              <Link to="/about" className="btn btn-secondary hover-lift">
+                {translate('learnMore') || "Dowiedz się więcej"}
+              </Link>
             </div>
-            <div className="feature hover-lift">
-              <div className="feature__icon">
-                <FontAwesomeIcon icon={faMountain} />
-              </div>
-              <h3>Cisza</h3>
-              <p>Z dala od miejskiego zgiełku, tylko Ty i natura</p>
-            </div>
-            <div className="feature hover-lift">
-              <div className="feature__icon">
-                <FontAwesomeIcon icon={faWater} />
-              </div>
-              <h3>Relaks</h3>
-              <p>Idealne miejsce na odpoczynek i regenerację</p>
-            </div>
-            <div className="feature hover-lift">
-              <div className="feature__icon">
-                <FontAwesomeIcon icon={faBed} />
-              </div>
-              <h3>Komfort</h3>
-              <p>Przytulne domki z wszystkimi udogodnieniami</p>
+            <div className="about-preview-image">
+              <img src="https://images.unsplash.com/photo-1605545282366-fc350ed947fc" alt={translate('aboutUsImageAlt') || "Piękny krajobraz lasu"} />
             </div>
           </div>
         </section>
-
-        <section className="cta slide-in-up">
-          <div className="cta__content">
-            <h2>Gotowy na niezapomniany wypoczynek?</h2>
-            <p>Zarezerwuj swój pobyt już dziś i ciesz się spokojem natury</p>
-            <Link to="/rezerwacja" className="btn btn-secondary hover-lift pulse">
-              Zarezerwuj teraz
-            </Link>
+        
+        <section className="featured-cabins">
+          <div className="container">
+            <h2>{translate('featuredCabins') || "Polecane domki"}</h2>
+            <div className="featured-cabins-grid">
+              <div className="cabin-card">
+                <img src="https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d" alt={translate('cabin1Alt') || "Domek Leśny"} />
+                <div className="cabin-card-content">
+                  <h3>{translate('cabin1Name') || "Domek Leśny"}</h3>
+                  <p>{translate('cabin1Description') || "Przytulny domek otoczony lasem, idealny dla par."}</p>
+                  <Link to="/cabins/domek-lesny" className="btn btn-sm hover-lift">
+                    {translate('viewDetails') || "Zobacz szczegóły"}
+                  </Link>
+                </div>
+              </div>
+              <div className="cabin-card">
+                <img src="https://images.unsplash.com/photo-1607638126202-60a6a2994055" alt={translate('cabin2Alt') || "Domek nad Stawem"} />
+                <div className="cabin-card-content">
+                  <h3>{translate('cabin2Name') || "Domek nad Stawem"}</h3>
+                  <p>{translate('cabin2Description') || "Przestronny domek z widokiem na staw, idealny dla rodzin."}</p>
+                  <Link to="/cabins/domek-nad-stawem" className="btn btn-sm hover-lift">
+                    {translate('viewDetails') || "Zobacz szczegóły"}
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="featured-cabins-cta">
+              <Link to="/cabins" className="btn btn-primary hover-lift">
+                {translate('viewAllCabins') || "Zobacz wszystkie domki"}
+              </Link>
+            </div>
+          </div>
+        </section>
+        
+        <section className="cta-booking">
+          <div className="container">
+            <div className="cta-booking-content">
+              <h2>{translate('bookingCTATitle') || "Zarezerwuj swój pobyt już dziś"}</h2>
+              <p>{translate('bookingCTADescription') || "Sprawdź dostępność naszych domków i zarezerwuj swój wymarzony pobyt w sercu natury."}</p>
+              <Link to="/booking" className="btn btn-primary hover-lift pulse">
+                {translate('bookNow') || "Zarezerwuj teraz"}
+              </Link>
+            </div>
           </div>
         </section>
       </div>

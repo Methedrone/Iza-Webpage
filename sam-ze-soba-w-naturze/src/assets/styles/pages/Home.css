@@ -1,0 +1,169 @@
+/* Style dla strony głównej */
+
+.home {
+  width: 100%;
+}
+
+/* Sekcja Hero */
+.hero {
+  height: 80vh;
+  min-height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1527430253228-e93688616381');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Sekcja O nas */
+.about-preview {
+  padding: 5rem 0;
+}
+
+.about-preview .container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-preview-content {
+  flex: 1;
+}
+
+.about-preview-image {
+  flex: 1;
+}
+
+.about-preview-image img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Sekcja Polecane Domki */
+.featured-cabins {
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.featured-cabins h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.featured-cabins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cabin-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cabin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cabin-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cabin-card-content {
+  padding: 1.5rem;
+}
+
+.cabin-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.cabin-card p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.featured-cabins-cta {
+  text-align: center;
+}
+
+/* Sekcja Rezerwacji */
+.cta-booking {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1595877244574-e90ce41ce089');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-booking-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-booking h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cta-booking p {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .about-preview .container {
+    flex-direction: column;
+  }
+  
+  .about-preview-image {
+    order: -1;
+  }
+  
+  .featured-cabins-grid {
+    grid-template-columns: 1fr;
+  }
+} 

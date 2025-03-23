@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# Sam ze sobą w naturze
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Strona internetowa dla ośrodka wypoczynkowego "Sam ze sobą w naturze" oferującego domki w sercu mazurskiej przyrody.
 
-## Available Scripts
+## Spis treści
 
-In the project directory, you can run:
+- [Instalacja](#instalacja)
+- [Uruchamianie projektu](#uruchamianie-projektu)
+- [Dostępne skrypty](#dostępne-skrypty)
+- [Struktura projektu](#struktura-projektu)
+- [Zasoby statyczne](#zasoby-statyczne)
+- [Najlepsze praktyki](#najlepsze-praktyki)
+- [Rozwiązywanie problemów](#rozwiązywanie-problemów)
 
-### `npm start`
+## Instalacja
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+# Klonowanie repozytorium
+git clone <repo-url>
+cd sam-ze-soba-w-naturze
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Instalacja zależności
+npm install
+```
 
-### `npm test`
+## Uruchamianie projektu
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# Uruchomienie w trybie deweloperskim
+npm start
 
-### `npm run build`
+# Budowanie projektu
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Weryfikacja zasobów i tłumaczeń przed deploymentem
+npm run preflight
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dostępne skrypty
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm start` - Uruchamia aplikację w trybie deweloperskim
+- `npm run build` - Buduje aplikację do katalogu build
+- `npm test` - Uruchamia testy
+- `npm run check-translations` - Sprawdza duplikaty kluczy w plikach tłumaczeń
+- `npm run verify-assets` - Weryfikuje, czy wszystkie obrazy używane w CSS istnieją
+- `npm run preflight` - Uruchamia wszystkie testy weryfikacyjne przed deploymentem
 
-### `npm run eject`
+## Struktura projektu
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+sam-ze-soba-w-naturze/
+├── public/                  # Statyczne zasoby
+│   ├── images/              # Obrazy używane w CSS
+│   └── ...
+├── scripts/                 # Skrypty pomocnicze
+│   ├── checkTranslations.js # Skrypt sprawdzający tłumaczenia
+│   └── verifyAssets.js      # Skrypt weryfikujący zasoby
+├── src/
+│   ├── assets/              # Zasoby aplikacji
+│   │   ├── styles/          # Pliki CSS
+│   │   └── ...
+│   ├── components/          # Komponenty wielokrotnego użytku
+│   ├── context/             # Konteksty React
+│   ├── pages/               # Komponenty stron
+│   ├── translations/        # Pliki tłumaczeń
+│   └── ...
+└── ...
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Zasoby statyczne
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Projekt zawiera szczegółowe wytyczne dotyczące zarządzania zasobami statycznymi (obrazy, fonty itp.).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Ważne:** Pełna dokumentacja dotycząca zasobów znajduje się w pliku [docs/ASSETS.md](docs/ASSETS.md).
 
-## Learn More
+### Kluczowe zasady:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Obrazy w CSS** - używaj ścieżek względnych do obrazów w `src/assets/images/`:
+   ```css
+   background-image: url('../images/image-name.jpg');
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Obrazy w komponentach** - importuj bezpośrednio w kodzie:
+   ```jsx
+   import logo from '../assets/images/logo.png';
+   ```
 
-### Code Splitting
+3. **Weryfikacja zasobów** - użyj skryptu do sprawdzenia poprawności ścieżek:
+   ```bash
+   npm run verify-assets
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Najlepsze praktyki
 
-### Analyzing the Bundle Size
+### Zarządzanie zasobami
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Obrazy używane w CSS**:
+   - Umieszczaj obrazy używane bezpośrednio w CSS w katalogu `public/images/`
+   - Używaj ścieżek zaczynających się od `/images/` w CSS
 
-### Making a Progressive Web App
+2. **Obrazy używane w komponentach**:
+   - Importuj obrazy bezpośrednio w komponentach React
+   - Przykład: `import logo from '../assets/images/logo.png'`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Tłumaczenia
 
-### Advanced Configuration
+1. **Unikaj duplikatów kluczy**:
+   - Przed dodaniem nowego klucza sprawdź, czy już nie istnieje
+   - Używaj zagnieżdżonej struktury dla organizacji tłumaczeń
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Sprawdzaj tłumaczenia**:
+   - Uruchamiaj `npm run check-translations` po wprowadzeniu zmian w plikach tłumaczeń
+   - Upewnij się, że wszystkie klucze są obecne we wszystkich językach
 
-### Deployment
+### Kod CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Organizacja klas**:
+   - Używaj BEM (Block Element Modifier) do organizacji klas CSS
+   - Przykład: `.cabin-card__image`, `.cabin-card__title`, `.cabin-card--featured`
 
-### `npm run build` fails to minify
+2. **Fallback dla zasobów**:
+   - Zawsze dodawaj fallback color dla elementów z obrazem tła
+   - Przykład: `background-color: #333; background-image: url(...);`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Eslint
+
+1. **Przestrzegaj zasad lintowania**:
+   - Rozwiązuj wszystkie błędy i ostrzeżenia wykryte przez ESLint
+   - W razie potrzeby używaj komentarzy `// eslint-disable-next-line` z uzasadnieniem
+
+## Rozwiązywanie problemów
+
+### Brakujące obrazy
+
+Jeśli otrzymujesz błędy dotyczące brakujących obrazów:
+
+1. Uruchom `npm run verify-assets`, aby zidentyfikować brakujące zasoby
+2. Utwórz wymagane katalogi i dodaj brakujące pliki
+3. Alternatywnie, zaktualizuj ścieżki w CSS
+
+### Problemy z tłumaczeniami
+
+Jeśli napotykasz problemy z tłumaczeniami:
+
+1. Uruchom `npm run check-translations`, aby znaleźć duplikaty kluczy
+2. Sprawdź, czy wszystkie używane klucze tłumaczeń istnieją w plikach tłumaczeń
+3. Upewnij się, że wszystkie pliki tłumaczeń są zarejestrowane w `src/translations/index.js`
+
+### Problemy z ESLint
+
+Jeśli ESLint zgłasza błędy lub ostrzeżenia:
+
+1. Sprawdź plik `.eslintrc` dla konfiguracji zasad
+2. Dodaj reguły ignorowania dla uzasadnionych przypadków
+3. Używaj `// eslint-disable-next-line` z komentarzem wyjaśniającym dlaczego

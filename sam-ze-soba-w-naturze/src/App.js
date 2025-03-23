@@ -1,45 +1,58 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import ThemeProvider from './context/ThemeContext';
-import Layout from './components/layout/Layout';
+import { LanguageProvider } from './contexts/LanguageProvider';
 
-// Lazy loading komponentów stron
-const Home = lazy(() => import('./pages/Home'));
-const Cabins = lazy(() => import('./pages/Cabins'));
-const CabinDetails = lazy(() => import('./pages/CabinDetails'));
-const Booking = lazy(() => import('./pages/Booking'));
-const About = lazy(() => import('./pages/About'));
-const Contact = lazy(() => import('./pages/Contact'));
+// Komponenty
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Cabins from './pages/Cabins';
+import CabinDetails from './pages/CabinDetails';
+import Booking from './pages/Booking';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
-// Komponent ładowania
-const Loading = () => (
-  <div className="loading">
-    <div className="loading-spinner"></div>
-  </div>
-);
+// Zoptymalizowane wczytywanie stylów
+import './assets/styles/index.css'; // Główny plik stylów łączący wszystkie potrzebne style
 
-function App() {
+// Komponent do przewijania na górę przy zmianie strony
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+const App = () => {
   return (
-    <HelmetProvider>
-      <ThemeProvider>
+    <LanguageProvider>
+      <HelmetProvider>
         <Router>
-          <Layout>
-            <Suspense fallback={<Loading />}>
+          <ScrollToTop />
+          <div className="app">
+            <Header />
+            <main>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/domki" element={<Cabins />} />
-                <Route path="/domki/:id" element={<CabinDetails />} />
-                <Route path="/rezerwacja" element={<Booking />} />
-                <Route path="/o-nas" element={<About />} />
-                <Route path="/kontakt" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/cabins" element={<Cabins />} />
+                <Route path="/cabins/:id" element={<CabinDetails />} />
+                <Route path="/booking" element={<Booking />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
-            </Suspense>
-          </Layout>
+            </main>
+            <Footer />
+          </div>
         </Router>
-      </ThemeProvider>
-    </HelmetProvider>
+      </HelmetProvider>
+    </LanguageProvider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,407 @@
+/* Responsive Styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .booking__progress {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .booking__step {
+    width: 80px;
+  }
+  
+  .booking__progress::before {
+    display: none;
+  }
+  
+  .booking__container {
+    padding: 1rem;
+  }
+  
+  .booking__summary-item {
+    flex-direction: column;
+  }
+  
+  .booking__summary-label,
+  .booking__summary-value {
+    flex: 0 0 100%;
+  }
+  
+  .booking__actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .booking__actions button {
+    width: 100%;
+  }
+  
+  .cabin-details__content {
+    grid-template-columns: 1fr;
+  }
+  
+  .cabin-details__gallery {
+    margin-bottom: 1rem;
+  }
+  
+  .cabin-details__thumbnail {
+    width: 60px;
+    height: 45px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .booking__progress {
+    max-width: 100%;
+  }
+  
+  .booking__step {
+    width: 100px;
+  }
+  
+  .cabin-details__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cabin-details__content {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+  }
+  
+  .header,
+  .footer,
+  .booking__actions,
+  .booking__progress {
+    display: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .booking-confirmation__content,
+  .booking__container {
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+  }
+  
+  .booking-confirmation__icon {
+    border: 2px solid #333;
+    color: #333 !important;
+    background-color: white !important;
+  }
+  
+  .booking-confirmation__details {
+    border: 1px solid #ddd;
+  }
+}
+
+/* Style responsywne dla całej strony */
+
+/* Duże ekrany (większe niż laptopy) */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+  }
+  
+  h3 {
+    font-size: 1.85rem;
+  }
+}
+
+/* Laptopy i duże tablety */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Tablety i małe laptopy */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  /* Nawigacja - mobilne menu zostało obsłużone w header.css */
+  
+  /* Układ z kolumnami na dwie kolumny */
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Nagłówki */
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.85rem;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+  }
+  
+  /* Zmniejszenie padding'ów sekcji */
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .section-lg {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  /* Domki na stronie głównej */
+  .featured-cabins-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Booking */
+  .booking-container {
+    flex-direction: column;
+  }
+  
+  .booking-sidebar {
+    order: -1;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .booking-summary {
+    position: static;
+  }
+}
+
+/* Tablety pionowo i duże telefony */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* Typografia */
+  html {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Układy na jedną kolumnę */
+  .grid-2, .grid-3, .grid-4, .featured-cabins-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Flex */
+  .about-preview .container {
+    flex-direction: column;
+  }
+  
+  .about-preview-image {
+    order: -1;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  
+  /* Sekcja Hero */
+  .hero, .page-hero {
+    height: 40vh;
+    min-height: 350px;
+  }
+  
+  .hero h1, .page-hero h1 {
+    font-size: 1.85rem;
+  }
+  
+  .hero p, .page-hero p {
+    font-size: 1rem;
+  }
+  
+  /* Formularze */
+  .form-row {
+    flex-direction: column;
+  }
+  
+  /* Strona About */
+  .about-section-flex {
+    flex-direction: column !important;
+  }
+  
+  .team-grid, .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Strona Cabins */
+  .cabins-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filters-section .form-row {
+    gap: var(--spacing-sm);
+  }
+  
+  /* Strona Contact */
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  /* Zmniejszony padding na sekcjach */
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* Małe telefony */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  /* Mniejsza typografia */
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Przyciski */
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+  
+  /* Hero sections */
+  .hero, .page-hero {
+    min-height: 300px;
+  }
+  
+  /* Zmniejszenie paddingów na sekcjach */
+  .section {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  /* Akcje formularza */
+  .form-actions {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .form-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Obsługa małych ekranów w orientacji poziomej */
+@media (max-height: 480px) and (orientation: landscape) {
+  .hero, .page-hero {
+    height: auto;
+    min-height: 250px;
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .main-nav.active {
+    overflow-y: auto;
+  }
+} 

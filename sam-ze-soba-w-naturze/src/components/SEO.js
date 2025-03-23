@@ -1,50 +1,35 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ 
-  title = 'Domki Wypoczynkowe "Pod Sosnami"',
-  description = 'Przytulne domki w sercu natury, idealne na rodzinny wypoczynek. Oferujemy komfortowe zakwaterowanie w malowniczej okolicy.',
-  keywords = 'domki wypoczynkowe, noclegi, wakacje, wypoczynek, natura, las, jezioro',
-  image = '/images/og-image.jpg',
-  url = 'https://pod-sosnami.pl'
-}) => {
-  useEffect(() => {
-    // Tutaj możemy dodać dodatkową logikę, która musi być wykonana po zamontowaniu komponentu
-  }, []);
-
+const SEO = ({ title, description, keywords, canonicalUrl, imageUrl }) => {
+  const siteTitle = "Sam ze sobą w naturze";
+  const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+  
   return (
     <Helmet>
-      {/* Podstawowe meta tagi */}
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
+      <html lang="pl" translate="no" />
+      <title>{fullTitle}</title>
+      {description && <meta name="description" content={description} />}
+      {keywords && <meta name="keywords" content={keywords} />}
       
-      {/* Open Graph / Facebook */}
+      {/* Kanoniczny URL */}
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      
+      {/* Open Graph */}
+      <meta property="og:title" content={fullTitle} />
+      {description && <meta property="og:description" content={description} />}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:site_name" content={siteTitle} />
+      {imageUrl && <meta property="og:image" content={imageUrl} />}
       
-      {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={url} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={image} />
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      {description && <meta name="twitter:description" content={description} />}
+      {imageUrl && <meta name="twitter:image" content={imageUrl} />}
       
-      {/* Dodatkowe meta tagi */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="robots" content="index, follow" />
-      <meta name="language" content="Polish" />
-      <meta name="author" content="Iza Nowak" />
-      
-      {/* Canonical URL */}
-      <link rel="canonical" href={url} />
-      
-      {/* Favicon */}
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      {/* Wyłączenie automatycznego tłumaczenia */}
+      <meta name="google" content="notranslate" />
     </Helmet>
   );
 };

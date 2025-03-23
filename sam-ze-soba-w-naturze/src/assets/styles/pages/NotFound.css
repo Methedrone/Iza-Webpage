@@ -1,0 +1,84 @@
+/* Style dla strony 404 */
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.not-found-code {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #6A8E7F;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 3px 3px 0 rgba(106, 142, 127, 0.2);
+}
+
+.not-found h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #334139;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.not-found-image {
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+/* Animacja */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.not-found-code {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .not-found-code {
+    font-size: 6rem;
+  }
+  
+  .not-found h1 {
+    font-size: 2rem;
+  }
+  
+  .not-found p {
+    font-size: 1rem;
+  }
+  
+  .not-found-actions {
+    flex-direction: column;
+  }
+  
+  .not-found-image {
+    max-width: 300px;
+  }
+} 

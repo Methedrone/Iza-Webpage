@@ -1,0 +1,197 @@
+/* Style dla nagłówka */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  margin-right: 2rem;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul li {
+  margin-left: 1.5rem;
+}
+
+.main-nav ul li a {
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  color: #334139;
+}
+
+.main-nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6A8E7F;
+  transition: width 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #6A8E7F;
+}
+
+.main-nav ul li a:hover::after {
+  width: 100%;
+}
+
+.language-switcher {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.language-switcher button {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:first-child {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.language-switcher button:last-child {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.language-switcher button.active {
+  background-color: #6A8E7F;
+  color: white;
+  border-color: #6A8E7F;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 35px;
+  position: relative;
+  z-index: 1010;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #334139;
+  transition: all 0.3s ease;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    margin-right: 0;
+    padding-top: 80px;
+    overflow-y: auto;
+  }
+  
+  .main-nav.active {
+    right: 0;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  
+  .main-nav ul li {
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .mobile-menu-btn span:nth-child(1) {
+    transform: none;
+  }
+  
+  .mobile-menu-btn span:nth-child(2) {
+    opacity: 1;
+  }
+  
+  .mobile-menu-btn span:nth-child(3) {
+    transform: none;
+  }
+  
+  [aria-expanded="true"] span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  [aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  [aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+} 

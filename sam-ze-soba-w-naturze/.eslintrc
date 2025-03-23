@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "react/jsx-key": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {
+        "no-unused-vars": ["warn", { 
+          "vars": "all", 
+          "args": "after-used", 
+          "ignoreRestSiblings": true 
+        }]
+      }
+    }
+  ]
+} 

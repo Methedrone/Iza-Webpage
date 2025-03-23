@@ -1,0 +1,14 @@
+Ten plik jest tylko po to, aby utworzyć folder public. 
+Należy umieścić tutaj wszystkie obrazy używane w projekcie, w tym:
+
+/logo.png
+/logo-footer.png
+/images/hero-bg.jpg
+/images/about-hero.jpg
+/images/cabins-hero.jpg
+/images/booking-hero.jpg
+/images/contact-hero.jpg
+/images/booking-cta-bg.jpg
+/images/about-preview.jpg
+/images/cabin1.jpg
+/images/cabin2.jpg 

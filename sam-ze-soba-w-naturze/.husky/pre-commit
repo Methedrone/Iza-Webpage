@@ -1,0 +1,21 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Sprawdzanie kodu przed commitowaniem..."
+
+# Sprawdź tłumaczenia
+echo "🌐 Sprawdzanie plików tłumaczeń..."
+npm run check-translations
+
+# Sprawdź zasoby
+echo "🖼️ Sprawdzanie zasobów..."
+npm run verify-assets
+
+# Uruchom ESLint
+echo "🚨 Sprawdzanie ESLint..."
+npx eslint --max-warnings=0 src/ || (
+  echo "❌ Znaleziono błędy lub ostrzeżenia ESLint. Napraw je przed commitowaniem."
+  exit 1
+)
+
+echo "✅ Kod przeszedł wszystkie testy. Commitowanie..." 
